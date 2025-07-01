@@ -44,7 +44,7 @@ pagina_seleccionada = st.sidebar.selectbox('Selecciona una página', paginas)
 if pagina_seleccionada == 'Inicio':
 
     # La función st.markdown permite centrar y agrandar la letra del título de la web en Streamlit.
-    st.markdown("<h1 style='text-align: center;'>Mi primer blog: Ninoska Montero</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Publicista Codificando</h1>", unsafe_allow_html=True)
 
     # <h1 style='text-align: center;'>Nombre de tu blog</h1>: Esto es una cadena de código HTML. 
     # La etiqueta <h1> se utiliza para el encabezado principal de una página web, y 
@@ -82,11 +82,10 @@ if pagina_seleccionada == 'Inicio':
     # ¿Qué te gustaría hacer en el futuro?, ¿Qué te gusta hacer en tu tiempo libre?
 
     texto = """
-    Soy estudiante de Publicidad cursando el 5to ciclo en la Pontificia Universidad Católica del Perú
-    Soy de Lima-Perú, aunque mis raíces yacen en todos lados, desde la sierra hasta el norte del Perú
-    Me encanta tener la oportunidad de explotar mi creatividad.
-    Mi mayor sueño es que mi profesión me dé la oportunidad de conocer todo el mundo (o al menos lo más que se pueda), amo conocer nuevas culturas, lugares, comida, personas, etc.
-    Me encanta pasar tiempo con mi familia, salir con amigos, pintar lienzos, etc.
+    Soy estudiante de Publicidad, sobrevivo al 5to ciclo en la Pontificia Universidad Católica del Perú. Soy limeña, pero mis raíces están repartidas por todo el mapa: un poquito de sierra, un toque del norte, y bastante caos capitalino.
+    Me encanta explotar mi creatividad (sin explotar mi salud mental… aunque a veces no se puede evitar). Sueño con que mi carrera me lleve a recorrer el mundo. Amo descubrir nuevas culturas, comidas, lugares y personas.
+    Cuando no estoy sobreviviendo a entregas, me gusta pasar tiempo con mi familia, salir con mis amigos, y fingir que soy artista pintando lienzos.
+    Y este ciclo aprendí a dominar Python, aunque por momentos él dominó mis nervios y paciencia.
     """
 
     # Las comillas triples (""") en Python se utilizan para definir cadenas multilínea.
@@ -115,10 +114,9 @@ elif  pagina_seleccionada == 'Experiencia':
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Al inicio me sentía muy perdida, ya que programar implica aprender un nuevo lenguaje, entender un ambiente de trabajo complejo.
-    La programación me ha enseñado que es necesario entender la lógica de las cosas para poder realizar la parte práctica, ya que sin ello, me sentía muy perdida.
-    Me gusta mucho que me dio la oportunidad de aprender 
-    Me gustaría usar la programación para automatizar procesos del emprendimiento de mi mamá.
+    Al inicio me sentía muy perdida. Programar es literalmente aprender otro idioma lleno de paréntesis, corchetes y errores que no entiendo.
+    Descubrí que para programar es necesario entender la lógica detrás de todo.
+    Pero, entre el caos y los errores, algo me gustó: la programación me está dando la oportunidad de aprender algo nuevo y, con suerte, de ayudar en algo útil. Mi meta secreta es usar Python para automatizar procesos en el emprendimiento de mi mamá.
     """
 
     # Mostramos el texto
@@ -175,10 +173,10 @@ elif  pagina_seleccionada == 'Experiencia':
 else:
 
     # Agregamos un título para la página de gráficos
-    st.markdown("<h1 style='text-align: center;'>Aquí escribe un nombre creativo para presentar tus gráficos</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Un poquito de mis creaciones</h1>", unsafe_allow_html=True)
 
     # Creamos una lista de gráficos
-    graficos = ['Gráfico de barras verticales de lenguas aisladas', 'Gráfico de barras horizontales de familias lingüísticas', 'mapa_cusco']
+    graficos = ['Gráfico de Barras: Lenguas Peruanas por Familia', 'Nube de Palabras: Hashtags de Vacunación MINSA en TikTok', 'Mapa de mis pelis favoritas']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
@@ -192,19 +190,19 @@ else:
     
 
     # Mostramos el gráfico seleccionado
-    if grafico_seleccionado == 'Gráfico de barras verticales de lenguas aisladas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("aisladas_base_datos.png", caption='Gráfico de lenguas aisladas', width=500)
+    if grafico_seleccionado == 'Gráfico de Barras: Lenguas Peruanas por Familia':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Muestra cuántas lenguas existen en el Perú según su familia lingüística. El Quechua y el Arawakan son los grupos con mayor cantidad de lenguas.</div>", unsafe_allow_html=True)
+        st.image("Gráfico_1.png", caption='Gráfico_1', width=500)
         pass
-    elif grafico_seleccionado == 'Gráfico de barras horizontales de familias lingüísticas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("lengua_familia_GB.png", caption='Gráfico de familias lingüísticas', width=500)
+    elif grafico_seleccionado == 'Nube de Palabras: Hashtags de Vacunación MINSA en TikTok':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Presenta los hashtags más usados por el MINSA en TikTok durante campañas de vacunación, destacando temas como salud, COVID-19 y eventos de vacunación.</div>", unsafe_allow_html=True)
+        st.image("Gráfico_2.png", caption='Gráfico_2', width=500)
         pass
-    elif grafico_seleccionado == 'mapa_cusco':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
+    elif grafico_seleccionado == 'Mapa de mis pelis favoritas':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Acá se muestran las locaciones de grabación de mis pelis favoritas</div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
-        import streamlit.components.v1 as components
-        with open("mapa_cusco.html", "r", encoding="utf-8") as f:
+        import st.components.v1.html as components
+        with open("Gráfico_html.html", "r", encoding="utf-8") as f:
             html_content = f.read()
         components.html(html_content, height=500)
         pass
