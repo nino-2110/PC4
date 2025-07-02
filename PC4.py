@@ -68,7 +68,7 @@ if pagina_seleccionada == 'Inicio':
     # Las columnas creadas se asignan a las variables col1 y col2.
 
     # En la primera columna colocamos la imagen de perfil
-    col1.image("foto.jpeg", caption='Hola, soy Ninoska Montero Callan', width=300)
+    col1.image("Foto.jpeg", caption='Hola, soy Ninoska Montero Callan', width=300)
 
     # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
     # La función image toma como primer argumento el nombre del archivo de la imagen que se desea mostrar. 
