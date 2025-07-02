@@ -176,7 +176,7 @@ else:
     st.markdown("<h1 style='text-align: center;'>Un poquito de mis creaciones</h1>", unsafe_allow_html=True)
 
     # Creamos una lista de gráficos
-    graficos = ['Gráfico de Barras: Lenguas Peruanas por Familia', 'Nube de Palabras: Hashtags de Vacunación MINSA en TikTok', 'Mapa de mis pelis favoritas']
+    graficos = ['Gráfico de Barras: Lenguas Peruanas por Familia', 'Nube de Palabras: Hashtags de Vacunación MINSA en TikTok', 'Mapa interactivo de familias de lenguas']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
@@ -198,8 +198,8 @@ else:
         st.markdown("<div style='text-align: justify; font-size: 20px;'>Presenta los hashtags más usados por el MINSA en TikTok durante campañas de vacunación, destacando temas como salud, COVID-19 y eventos de vacunación.</div>", unsafe_allow_html=True)
         st.image("Gráfico_2.png", caption='Gráfico_2', width=500)
         pass
-    elif grafico_seleccionado == 'Mapa de mis pelis favoritas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Acá se muestran las locaciones de grabación de mis pelis favoritas</div>", unsafe_allow_html=True)
+    elif grafico_seleccionado == 'Mapa interactivo de familias de lenguas':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Acá se muestran las locaciones de las familias de lenguas</div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
         import streamlit.components.v1.html as components
         with open("mapa.html", "r", encoding="utf-8") as f:
