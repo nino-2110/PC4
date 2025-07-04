@@ -201,7 +201,7 @@ else:
     elif grafico_seleccionado == 'Mapa interactivo de familias de lenguas':
         st.markdown("<div style='text-align: justify; font-size: 20px;'>Acá se muestran las locaciones de las familias de lenguas</div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
-        import streamlit.components.v1.html as components
+        import streamlit.components.v1 as components
         with open("mapa.html", "r", encoding="utf-8") as f:
             html_content = f.read()
         components.html(html_content, height=500)
